@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <table class="u-full-width">
+        <tr>
+            <th>Дата</th>
+            <th>IP address</th>
+            <th>Вычисления</th>
+            <th>Результат</th>
+        </tr>
+    {% for record in records %}
+        <tr>
+            <td>{{ record[2] }}</td>
+            <td>{{ record[1] }}</td>
+            <td>{{ record[3] }}</td>
+            <td>{{ record[4] }}</td>
+        </tr>
+    {% endfor %}
+    </table> 
+     
+{% endblock %}

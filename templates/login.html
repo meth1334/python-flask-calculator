@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+<form action="/login" method="post" class="form-contact">
+<label>Login: </label> <input type="text" name="login" value="" requied />
+<label>Password: </label> <input type="password" name="psw" value="" requied />
+<input type="checkbox" name="remainme" /> Запомнить меня
+<input type="submit" value="Войти" />
+<hr style="align-self: start; width: 300px;">
+<a href="/register">Регистрация</a>
+</form>
+{% endblock %}
